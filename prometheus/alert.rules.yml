@@ -2,7 +2,7 @@ groups:
   - name: give_me_money
     rules:
       - alert: give_me_money
-        expr: rate(give_me_money_total[10s]) > 10
+        expr: rate(give_me_money_total[10s]) > 0.3
         for: 10s
         labels:
           severity: warning

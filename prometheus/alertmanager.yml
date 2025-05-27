@@ -4,5 +4,5 @@ route:
 receivers:
   - name: slack
     slack_configs:
-      - api_url: "<SLACK_WEBHOOK_URL>"
+      - api_url: "https://hooks.slack.com/services/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"
         text: "{{ .CommonAnnotations.summary }} - {{ .CommonAnnotations.description }}"
