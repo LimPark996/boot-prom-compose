@@ -4,5 +4,7 @@ route:
 receivers:
   - name: slack
     slack_configs:
-      - api_url: "https://hooks.slack.com/services/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"
+      - api_url: "https://hooks.slack.com/services/..."
         text: "{{ .CommonAnnotations.summary }} - {{ .CommonAnnotations.description }}"
+        channel: 'alert-prom'
+        send_resolved: true
